@@ -8,11 +8,13 @@ try {
     var mySel = app.activeDocument.selection;
     var l = mySel.length;
  } catch (err) { 
-     try {
-        mySel.paragraphs.everyItem().clearOverrides(OverrideType.ALL);
-      } catch (err) {}
  	exit(); 
  }   
+
+try {
+        mySel[0].paragraphs.everyItem().clearOverrides(OverrideType.ALL);
+} catch (err) {}
+
  
  var i=0;
  while (i++ < l ) {
