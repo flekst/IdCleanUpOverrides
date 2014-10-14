@@ -7,7 +7,12 @@
 try {
     var mySel = app.activeDocument.selection;
     var l = mySel.length;
- } catch (err) { exit(); }   
+ } catch (err) { 
+     try {
+        mySel.paragraphs.everyItem().clearOverrides(OverrideType.ALL);
+      } catch (err) {}
+ 	exit(); 
+ }   
  
  var i=0;
  while (i++ < l ) {
