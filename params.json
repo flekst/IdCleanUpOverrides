@@ -1,0 +1,6 @@
+{
+  "name": "Idcleanupoverrides",
+  "tagline": "Indesign: Clean up all overrides in selected objects",
+  "body": "IdCleanUpOverrides\r\n==================\r\n\r\nIndesign: Clean up all style overrides in selected objects.\r\n\r\nIndesign: Скрипт для чистки всех переназначений свойств выбранных объектов относительно базового стиля.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
